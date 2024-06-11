@@ -1,0 +1,114 @@
+/* reset styles */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 16px;
+  font-family: sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+.profileContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.profileInfo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid grey;
+}
+.profileAvatar {
+  display: block;
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  background-color: rgb(41, 41, 41);
+  margin-bottom: 30px;
+}
+
+.profileUsername {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.profileTag,
+.profileLocation {
+  color: grey;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.profileLocation {
+  margin: 0;
+}
+
+.profileList {
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+}
+.profileListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+}
+.profileListItem:nth-child(1),
+.profileListItem:nth-child(2) {
+  border-right: 3px solid grey;
+}
+
+.profileListTitle {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.profileListNumber {
+  font-size: 28px;
+  font-weight: 700;
+}
